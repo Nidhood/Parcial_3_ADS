@@ -1,0 +1,34 @@
+#Main {
+    -fx-font-family: "Georgia";
+    -fx-background-color: #3A3A5BFF;
+}
+
+#title {
+    -fx-font-family: "Apple Chancery";
+    -fx-font-size: 50px;
+    -fx-text-fill: #e2b028;
+}
+
+#room1, #name , #room2, #month, #amount {
+    -fx-text-fill: #e2b028;
+    -fx-font-size: 15px;
+}
+
+.list-view {
+    -fx-background-color: #627f49;
+}
+
+.text-field {
+    -fx-background-color: #627f49;
+    -fx-text-fill: #FAD7A0;
+    -fx-font-size: 20px;
+}
+
+.button {
+    -fx-background-color: #3A3A5BFF;
+    -fx-border-color: #E67E22;
+    -fx-text-fill: #E67E22;
+    -fx-border-width: 2;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}

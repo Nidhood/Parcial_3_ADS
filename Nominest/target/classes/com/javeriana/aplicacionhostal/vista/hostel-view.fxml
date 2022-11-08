@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.ListView?>
+<VBox fx:id="Main" alignment="TOP_CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.javeriana.aplicacionhostal.controlador.ApplicationController"
+      stylesheets="@style.css">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <HBox alignment="CENTER" spacing="10.0" >
+            <Label fx:id="title" text="Aplicación hostal"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label fx:id="room1" text="Cuarto :"/>
+            <TextField fx:id="InputCuarto" prefWidth="50"/>
+            <Label fx:id="name" text="Nombre :"/>
+            <TextField fx:id="InputNombre" prefWidth="260"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button text="Agregar arrendatario" onAction="#onAgregarArrendatarioClick" />
+            <Button text="Mostrar arrendatarios" onAction="#onMostrarArrendatariosClick"/>
+            <Button text="Remover arrendatarios" onAction="#onRemoverArrendatariosClick"/>
+            <Button text="Salir" onAction="#onSalirClick" />
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <ListView fx:id="Blanck1" prefWidth="1200" prefHeight="80"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label fx:id="room2" text="Cuarto :"/>
+            <TextField fx:id="InputCuartoPago" prefWidth="50"/>
+            <Label fx:id="month" text="Mes :"/>
+            <TextField fx:id="InputMes" prefWidth="200"/>
+            <Label fx:id="amount" text="Cantidad :"/>
+            <TextField fx:id="InputCantidad" prefWidth="200"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button text="Realizar pago" onAction="#onRealizarPagoClick"/>
+            <Button text="Mostrar pagos" onAction="#onMostrarPagosClick"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10.0">
+            <ListView fx:id="Blanck2" prefWidth="1200" prefHeight="80"/>
+        </HBox>
+</VBox>
